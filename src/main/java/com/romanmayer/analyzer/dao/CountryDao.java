@@ -7,8 +7,16 @@ import java.util.List;
 /**
  * Created by romanmayer on 04/04/2017.
  */
-public class CountryDao {
-    public List<Country> fetchAllCountries() {
-        return null;
-    }
+public interface CountryDao {
+    List<Country> getCountries();
+    Country findByCode(String code);
+    Country countryWithMinInternetUsers();
+    Country countryWithMaxInternetUsers();
+    Country countryWithMinLiteracyRate();
+    Country countryWithMaxLiteracyRate();
+    Double getCorrelationCoefficient();
+    void update(Country country);
+    void create(Country country);
+    void delete(Country country);
+
 }

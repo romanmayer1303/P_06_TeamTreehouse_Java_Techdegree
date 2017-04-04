@@ -32,24 +32,15 @@ public class Country {
         this.adultLiteracyRate = builder.adultLiteracyRate;
     }
 
-    /*
-        @Override
-        public String toString() {
-            return "Country{" +
-                    "code='" + code + '\'' +
-                    ", name='" + name + '\'' +
-                    ", internetUsers=" + internetUsers +
-                    ", adultLiteracyRate=" + adultLiteracyRate +
-                    '}';
-        }
-    */
-
+    @Override
     public String toString() {
-        return name + "\t\t\t\t\t\t\t\t\t" +
-                internetUsers + "\t\t\t\t\t\t" +
-                adultLiteracyRate;
+        return "Country{" +
+                "code='" + code + '\'' +
+                ", name='" + name + '\'' +
+                ", internetUsers=" + internetUsers +
+                ", adultLiteracyRate=" + adultLiteracyRate +
+                '}';
     }
-
 
     public String getCode() {
         return code;
